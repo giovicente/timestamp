@@ -16,10 +16,9 @@ public class TimestampService {
 
         long dataHoraTransacaoAuxiliar = (System.currentTimeMillis() * 1000);
 
-        MainframeTimestamp mainframeTimestamp = new MainframeTimestamp(
-                SIMPLE_DATE_FORMAT.format(dataHoraTransacaoAuxiliar / 1000)
-                        + DECIMAL_FORMAT.format(System.nanoTime() % 1000)
-        );
+        MainframeTimestamp mainframeTimestamp = new MainframeTimestamp
+                (SIMPLE_DATE_FORMAT.format(dataHoraTransacaoAuxiliar / 1000) +
+                        DECIMAL_FORMAT.format(System.nanoTime() % 1000));
 
         return mainframeTimestamp;
     }

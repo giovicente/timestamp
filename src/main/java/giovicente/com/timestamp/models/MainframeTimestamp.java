@@ -14,4 +14,5 @@ public class MainframeTimestamp {
     public String getDataHoraTransacao() { return dataHoraTransacao; }
 
     public void setDataHoraTransacao(String dataHoraTransacao) { this.dataHoraTransacao = dataHoraTransacao; }
+
 }
