@@ -9,7 +9,7 @@ import java.text.SimpleDateFormat;
 @Service
 public class TimestampService {
 
-    static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss.SSS");
+    private static final SimpleDateFormat SIMPLE_DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd-HH.mm.ss.SSS");
     private static final DecimalFormat DECIMAL_FORMAT = new DecimalFormat("000");
 
     public MainframeTimestamp gerarTimestamp() {
